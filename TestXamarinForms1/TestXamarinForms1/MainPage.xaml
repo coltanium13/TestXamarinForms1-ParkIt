@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TestXamarinForms1"
+             x:Class="TestXamarinForms1.MainPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Welcome to Xamarin.Forms"
+               x:Name="LabelMessage"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+        <Button Text="Click Me"
+                x:Name="SaveButton"
+                Clicked="OnSave"
+                BackgroundColor="Gray"
+                TextColor="White" />
+    </StackLayout>
+
+</ContentPage>
