@@ -22,7 +22,7 @@ namespace TestXamarinForms1
         public void OnSave(object sender, EventArgs e)
         {
             if(CurrentUser != null)
-                LabelMessage.Text = $"You clicked the damn button...{CurrentUser.Name}";
+                LabelMessage.Text = $"You clicked the damn button...{CurrentUser.Name}.";
         }
 	}
 }
