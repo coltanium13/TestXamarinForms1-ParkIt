@@ -4,20 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using TestXamarinForms1.Model;
 
 namespace TestXamarinForms1
 {
 	public partial class MainPage : ContentPage
 	{
-		public MainPage()
+        public User CurrentUser;
+
+
+        public MainPage()
 		{
 			InitializeComponent();
-
+            CurrentUser = new MockDataSource().FakeUser;
 		}
 
         public void OnSave(object sender, EventArgs e)
         {
-            LabelMessage.Text = "You clicked the damn button...";
+            if(CurrentUser != null)
+                LabelMessage.Text = $"You clicked the damn button...{CurrentUser.Name}";
         }
 	}
 }

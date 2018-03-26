@@ -6,9 +6,9 @@ namespace TestXamarinForms1.Model
 {
     public class User
     {
-        int ID { get; set; }
-        string Name { get; set; }
-        string Address { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string Address { get; set; }
     }
 
     public class Owner : User
@@ -17,17 +17,16 @@ namespace TestXamarinForms1.Model
 
         public class ParkingSpot
         {
-            int ID { get; set; }
-            bool AvailableForRent { get; set; }
-            int HoursAvailable { get; set; }
-            int? RenterId { get; set; }
+            public int ID { get; set; }
+            public bool AvailableForRent { get; set; }
+            public int HoursAvailable { get; set; }
+            public int? RenterId { get; set; }
         }
 
     }
 
     public class Driver : User
     {
-        int ID { get; set; }
-        string LicenscePlate { get; set; }
+        public string LicenscePlate { get; set; }
     }
 }
